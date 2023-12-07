@@ -1,0 +1,35 @@
+{
+  "name": "google-reviews",
+  "packageManager": "pnpm@8.11.0",
+  "description": "Fetch google reviews use Google Business API.",
+  "keywords": [
+    "Google Business API",
+    "Google Review"
+  ],
+  "homepage": "https://github.com/i7eo/google-reviews#readme",
+  "bugs": {
+    "url": "https://github.com/i7eo/google-reviews/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i7eo/google-reviews.git"
+  },
+  "scripts": {
+    "node": "node google-server-code.js",
+    "node:refresh-token": "node refresh-token-server-code.mjs",
+    "web:refresh-token": "pnpm exec http-server ./refresh-token-web-code.html"
+  },
+  "dependencies": {
+    "googleapis": "^129.0.0",
+    "undici": "^6.0.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  }
+}
